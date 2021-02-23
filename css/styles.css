@@ -1,0 +1,183 @@
+body{
+    background-color: #27203f;
+}
+
+::-moz-selection {
+  background-color: #e5713e;
+  color: #fff;
+}
+
+::selection {
+  background-color: #e5713e;
+  color: #fff;
+}
+
+h2,h3,h4,h5,h6,span{
+    font-family: 'Lobster', cursive;
+    color: #fff;
+}
+
+h6{
+    font-family: 'Catamaran', sans-serif;
+}
+
+p{
+    font-family: 'Catamaran', sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+
+header{
+    background-image: url('../img/prxl1.jpg');
+    margin-top: -60px;
+    min-height: 854px;
+    position: relative;
+}
+
+hr{
+    border: 2px solid #e5713e;
+}
+
+.menu-wrapper{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-wrapper ul{
+    display: inline-table;
+}
+
+.menu-wrapper ul li{
+    display: inline;
+}
+
+.menu-wrapper ul li{
+    float: left;
+    padding: 0 10px;
+    list-style: none;
+}
+
+.menu-wrapper ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 30px;
+    border: 1px solid #fff;
+    padding: 2px 8px;
+    border-radius: 15px;
+     transition: all 1s;
+}
+
+.menu-wrapper ul li a:hover{
+    border: 1px dotted #fff;
+}
+
+.about, .offert, .contact{
+    text-align: center;
+    padding: 80px 0;
+}
+
+.about .text{
+    padding: 40px 0;
+}
+
+.about .text span, .offert > span, .gallery .text > span, .contact > span{
+    font-size: 100px;
+}
+
+div.cards{
+    margin-top: 140px;
+}
+
+.offert .fa{
+    color: #e5713e;
+    font-size: 200px;
+}
+
+.offert .title h6{
+    text-transform: uppercase;
+    font-size: 50px;
+    width: auto;
+    display: inline-block;
+    border-bottom: 2px solid #e5713e;
+    font-weight: bold;
+}
+
+.offert .text-content{
+    margin-top: 20px;
+}
+
+.cards .row{
+    margin: 240px 0;
+}
+
+.cards .row:last-child{
+    margin-bottom: none;
+}
+
+.gallery{
+    text-align: center;
+    margin-top: -60px;
+}
+
+.gallery-content img{
+    max-width: 400px;
+    webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+}
+
+.gallery-content .row{
+    margin: 40px 0;
+}
+
+.contact button[type=submit]{
+    margin-top: -60px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer .social-media{
+    padding: 0;
+}
+
+footer .social-media .fa{
+    font-size: 40px;
+    -moz-transition: color 1.0s ease;
+    -o-transition: color 1.0s ease;
+    -webkit-transition: color 1.0s ease;
+    transition: color 1.0s ease;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+}
+
+footer .social-media .fa:hover{
+    color: #e5713e;
+}
+
+@media(max-width: 550px){
+    .menu-wrapper ul li{
+        display: block;
+        float: none;
+        margin: 20px 0;
+    }
+    .gallery-content img{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .about .text span, .offert > span, .gallery .text > span, .contact > span{
+        font-size: 50px;
+    }
+    .offert .title h6{
+        margin: 20px 0;
+    }
+
+    .cards .row:first-child{
+        margin: 0;
+    }
+}
